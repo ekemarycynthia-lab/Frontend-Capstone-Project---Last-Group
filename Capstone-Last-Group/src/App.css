@@ -1,5 +1,5 @@
 :root {
-  --navy: #0b1a66;
+  --navy: #051540;
   --blue: #1a4fc9;
   --heading: #1246b6;
   --tint: #f0f5ff;
@@ -91,8 +91,29 @@ h2 { color: var(--heading); font-size: 1.4rem; font-weight: 700; margin: 0 0 0.7
   background: linear-gradient(135deg, #1b56d6, #0a2a7a);
   display: block;
 }
-#intro div { text-align: center; }
+#intro .intro-text { text-align: center; }
 #intro p { margin: 0; font-size: 0.85rem; line-height: 1.7; color: #333; }
+
+.video-wrap { position: relative; }
+
+.video-toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.video-toggle:hover { background: #fff; }
 
 /* ---------- PLANET CARDS ---------- */
 #planets {
@@ -137,22 +158,37 @@ h2 { color: var(--heading); font-size: 1.4rem; font-weight: 700; margin: 0 0 0.7
 /* ---------- FACTS TABLE ---------- */
 #facts { background: #fff; padding: 3.5rem var(--gutter); }
 #facts > p { margin: 0 0 1.5rem; max-width: 640px; font-size: 0.8rem; line-height: 1.7; }
-#facts table { width: 100%; border-collapse: collapse; font-size: 0.72rem; }
+
+/* white gaps between every cell (header, data and group labels) */
+#facts table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2px;
+  background: #fff;
+  font-size: 0.72rem;
+}
 #facts caption {
   text-align: left;
   font-size: 0.75rem;
-  font-weight: 600;
-  padding: 0 0 0.5rem;
+  font-weight: 700;
+  padding: 0 0 0.6rem;
 }
 #facts th,
 #facts td {
-  border: 1px solid #e0e8f8;
-  padding: 0.5rem 0.4rem;
+  border: 0;             
+  padding: 0.75rem 0.5rem;
   text-align: center;
 }
-#facts thead th { background: var(--blue); border-color: var(--blue); color: #fff; font-weight: 600; }
-#facts tbody th { background: #dbe6fb; font-weight: 600; }
-#facts tbody tr:nth-child(even) td { background: #f4f8ff; }
+#facts thead th { background: var(--blue); color: #fff; font-weight: 600; }
+#facts tbody td { background: #eaf1ff; }                      
+/* every data cell the same */
+#facts tbody th { background: #d6e4fc; color: #0b1a66; font-weight: 700; }
+
+/* rounded outer corners only */
+#facts thead tr th:first-child { border-top-left-radius: 10px; }
+#facts thead tr th:last-child { border-top-right-radius: 10px; }
+#facts tbody tr:last-child th:first-child { border-bottom-left-radius: 10px; }
+#facts tbody tr:last-child td:last-child { border-bottom-right-radius: 10px; }
 
 /* ---------- CONTACT FORM ---------- */
 #contact { background: #fff; padding: 3.5rem var(--gutter) 4.5rem; }
@@ -242,8 +278,8 @@ footer p:last-of-type a:last-of-type { float: right; }
   #hero a { flex: 1 1 0; text-align: center; }
 
   #intro { grid-template-columns: 1fr; gap: 1.25rem; padding: 2rem var(--gutter); }
-  #intro div { order: 1; }
-  #intro video { order: 2; }
+  #intro .intro-text { order: 1; }
+  #intro .video-wrap { order: 2; }
 
   #planets { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; padding: 2rem var(--gutter) 2.5rem; }
   #planets figure img { aspect-ratio: 1; }

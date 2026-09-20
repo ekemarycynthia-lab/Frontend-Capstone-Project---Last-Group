@@ -1,213 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Group Capstone Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Last Group Capstone Project">
+  <title>Explore Our Solar System Through Data</title>
+  <link rel="stylesheet" href="Capstone.css">
+  <script src="Capstone.js" defer></script>
 </head>
 <body>
-   <header>
-     <!-- SECTION 1: Hero Banner (Dark Blue) -->
-    <section id="hero" class="hero-section">
-        <div>
- <img src="src\assets\hero.svg" alt="Planet">
- <div class="container split-layout">
-        <div class="hero-text">
-          <h1>Explore Our Solar System Through Data</h1>
-          <p>Understand the planets not just by name, but by measurable 
-            facts. From size and mass to gravity and density, this page
-             breaks the solar system in a clear, data-driven way.</p>
-  </div>
-       
-     <img src="src\assets\Image.svg" alt="Earth from space">
 
- <div class="button-group">
-            <a href="##explore the data" class="btn btn-primary">Explore the Data</a>
-            <a href="#contact" class="btn btn-secondary">Contact Us</a>
-        
-        </div>
-      </section>
-    </header>
-    
-    <main>
-    <hr>
-    <body> 
+  <!-- Hero -->
+  <header id="hero">
+    <img src="src/assets/hero.svg" alt="Planet logo">
 
- <hr>
-     <!-- Video Section: Video & Informational Intro -->
-    <section class="info-section">
-      <div class="container split-layout">
-        <!-- Structural div to house the video component -->
-        <div>
-         <video controls> 
-    <source src=https://media.istockphoto.com/id/1673970797/video/sun-and-planets-of-the-solar-system-animation.mp4?s=mp4-640x640-is&k=20&c=g_1t-Jb1B_pAoD2yNd9LrEhzfVnUk2OciopCsbOtZJU
-            </video>
- </div>
-        </div>
-        <div class="info-text">
-          <h2>How Planetary Data Helps Us Understand Space</h2>
-          <p>Planetary science goes beyond images...</p>
-        </div>
+    <div>
+      <h1>Explore Our Solar System Through Data</h1>
+      <p>Understand the planets not just by name, but by measurable facts. From size and mass to gravity and density, this page breaks the solar system in a clear, data-driven way.</p>
+      <a href="#planets">Explore the Data</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+    <img src="src/assets/Image.svg" alt="Earth from space">
+  </header>
+
+  <main>
+
+    <!-- Video and intro -->
+    <section id="intro">
+      <video autoplay muted loop playsinline>
+        <source src="https://pixabay.com/videos/download/video-222271_medium.mp4" type="video/mp4">
+      </video>
+      <div>
+        <h2>How Planetary Data Helps Us Understand Space</h2>
+        <p>Planetary science goes beyond images. Comparing <strong>mass, diameter, gravity,</strong> and <strong>density,</strong> we gain insight into how planets form, behave, and interact within the solar system.</p>
       </div>
- <h2> How planetary Data Helps Us understand Space</h2>
- <p>Plananetary science goes beyond images. Comparing <strong>mass, diameter, gravity,</strong> and <strong>density,</strong></p>
-   we gain insight into how planets form, behave, and interact within the solar system.
-<br>
-
-   
-  
-</section>
-<hr>
-<section>
-    <h2>Visualizing the Differences Between Planets</h2>
-    <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly
-        different terrestrial planets are fromgas giants and ice giants.</p>
-<img src="https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBzeXN0ZW18ZW58MHx8MHx8fDA%3D alt="Planetary Comparison" width="760" height="315" loading="lazy">
-
     </section>
-   <!-- Table Section: Data Table -->
-    <section class="table-section">
-      <div class="container">
-    <h2> Planetary Facts at a Glance</h2>
-    <p>Below is a comparative table of major planets in our solar sysytem. Thedata highlights key
-        physical properties used by astronomers and researchers worldwide.
-        <!-- Native HTML Table structure for data density -->
-        <div class="table-responsive-wrapper">
-     <table>
-        <caption>Data about the planets of our solar system (Planetary facts taken from Nasa)
-          </caption>
-            <thead>
-            <tr>
-                <th colspan="2"></th>
-                <th>Name</th>
-                <th>Mass(10 24kg)</th>
-                <th>Diameter (km)</th>
-                <th>Density (kg/m3)</th>
-                <th>Gravity (m/s2)</th>
-            </tr>
-            <tr>
-                <th colspan="2" rowspan="4" >Terrestial Planets</th>
-                <td>Mercury</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-            </tr>
-            <tr>
-                <td>Venus</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-             <tr>
-                <td>Earth</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-             <tr>
-                <td>Mars</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-             <tr>
-                <th rowspan="4">Jovian planets</th>
-                <th rowspan="2">Gas Giants</th>
-                <td>Jupiter</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-             <tr>
-                <td>Saturn</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-             <tr>
-                <th rowspan="2">Ice Giants</th>
-                <td>Uranus</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-             <tr>
-                <td>Neptune</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-             <tfoot>
-             <tr>
-                <th colspan="2">Dwarf planets</th>
-                <td>Pluto</td>
-                <td>0.330</td>
-                <td>4,877</td>
-                <td>5427</td>
-                <td>3.7</td>
-             </tr>
-            </tfoot>
-        </table>
-    </p>
-      </div>
-</section>
 
-<!-- Form Section: Contact & Inquiries Form -->
-    <section class="form-section">
-      <div class="container standard-width">
-    <h2>Have Questions About Planetary Science?</h2>
-    <p>Interested in learning more about space, astronomy, or how planetary data is collected and analyzed?</p>
-    <p>Reach out and we'll get back to you.</p> 
-    
-    <form action="/submit" method="post">
-    <label for="name">Full Name*</label>
-    <input type="text" id="name" name="name" placeholder="Full name" required><br><br>
+    <!-- Planets -->
+    <section id="planets">
+      <h2>Visualizing the Differences Between Planets</h2>
+      <p>Each planet in our solar system has unique physical characteristics. Visual comparisons help highlight how vastly different terrestrial planets are from gas giants and ice giants.</p>
 
-    <label for="email">Email*</label>
-    <input type="text" id="email" name="email" placeholder="example@email.com" required><br><br>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/mercury.webp" alt="Mercury">
+        <figcaption>Mercury<br>Distance from Sun: 57.9 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/venus.webp" alt="Venus">
+        <figcaption>Venus<br>Distance from Sun: 108.2 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/earth.jpg" alt="Earth">
+        <figcaption>Earth<br>Distance from Sun: 149.6 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/mars.webp" alt="Mars">
+        <figcaption>Mars<br>Distance from Sun: 227.9 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/jupiter.webp" alt="Jupiter">
+        <figcaption>Jupiter<br>Distance from Sun: 778.6 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/saturn.webp" alt="Saturn">
+        <figcaption>Saturn<br>Distance from Sun: 1,433.5 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/uranus.webp" alt="Uranus">
+        <figcaption>Uranus<br>Distance from Sun: 2,872.5 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/neptune.webp" alt="Neptune">
+        <figcaption>Neptune<br>Distance from Sun: 4,495.1 million km</figcaption>
+      </figure>
+      <figure>
+        <img src="https://anurella.github.io/images/planets/pluto.webp" alt="Pluto">
+        <figcaption>Pluto<br>Distance from Sun: 5,906.4 million km</figcaption>
+      </figure>
+    </section>
 
+    <!-- Table -->
+    <section id="facts">
+      <h2>Planetary Facts at a Glance</h2>
+      <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
 
-  <label for="city">City*</label>
-  <select id="city" name="city" placeholder="Choose City" required><br>
-  <option value="city">Choose City</option>
-  <option value="lagos">Lagos</option>
-  <option value="kano">Kano</option>
-  <option value="abuja">Abuja</option>
-  <option value="port harcourt">Port Harcourt</option>
-  <option value="enugu">Enugu</option>
-  <option value="owerri">Owerri</option>
-  <option value="calabar">Calabar</option>
-  <option value="ibadan">Ibadan</option>
-  <option value="aba">Aba</option>
-  <option value="onitsha">Onitsha</option>
-  <option value="other">Other</option>
-  </select>
-  
-    <label for="tel">Phone Number*</label>
-    <input type="tel" id="tel" name="tel" placeholder="Please enter a valid phone number." required maxlength="11"><br><br>
+      <table>
+        <caption>Data about the planets of our solar system (Planetary facts taken from NASA)</caption>
+        <thead>
+          <tr>
+            <th colspan="2"></th>
+            <th>Name</th>
+            <th>Mass (10<sup>24</sup>kg)</th>
+            <th>Diameter (km)</th>
+            <th>Density (kg/m<sup>3</sup>)</th>
+            <th>Gravity (m/s<sup>2</sup>)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th colspan="2" rowspan="4">Terrestrial Planets</th>
+            <td>Mercury</td><td>0.330</td><td>4,879</td><td>5,427</td><td>3.7</td>
+          </tr>
+          <tr>
+            <td>Venus</td><td>4.87</td><td>12,104</td><td>5,243</td><td>8.9</td>
+          </tr>
+          <tr>
+            <td>Earth</td><td>5.97</td><td>12,756</td><td>5,514</td><td>9.8</td>
+          </tr>
+          <tr>
+            <td>Mars</td><td>0.642</td><td>6,792</td><td>3,933</td><td>3.7</td>
+          </tr>
+          <tr>
+            <th rowspan="4">Jovian Planets</th>
+            <th rowspan="2">Gas Giants</th>
+            <td>Jupiter</td><td>1,898</td><td>142,984</td><td>1,326</td><td>23.1</td>
+          </tr>
+          <tr>
+            <td>Saturn</td><td>568</td><td>120,536</td><td>687</td><td>9.0</td>
+          </tr>
+          <tr>
+            <th rowspan="2">Ice Giants</th>
+            <td>Uranus</td><td>86.8</td><td>51,118</td><td>1,271</td><td>8.7</td>
+          </tr>
+          <tr>
+            <td>Neptune</td><td>102</td><td>49,528</td><td>1,638</td><td>11.0</td>
+          </tr>
+          <tr>
+            <th colspan="2">Dwarf Planets</th>
+            <td>Pluto</td><td>0.0130</td><td>2,376</td><td>1,850</td><td>0.7</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <label for="message">Message*</label>
-    <textarea id="message" name="message" placeholder="Enter your message" required maxlength="100"></textarea><br>
-    <span class="char-counter" placeholder="100 characters"></span>
-    
+    <!-- Contact form -->
+    <section id="contact">
+      <h2>Have Questions About Planetary Science?</h2>
+      <p>Interested in learning more about space, astronomy, 
+         or how planetary data is collected and analyzed? Reach out and we'll get back to you.</p>
 
-    
-     <input type="submit" value="Submit">
-</form>
-</div>
-</section>
-</main>   
-    
-<!-- Dark Blue Footer Area -->
-<footer>
+      <form action="https://whitebricks.com/tsacademy.php" method="post">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" name="name" placeholder="Full name" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="tel">Phone Number*</label>
+        <input type="tel" id="tel" name="tel" placeholder="Please enter a valid phone number." required maxlength="11" pattern="[0-9]{11}" title="Enter an 11-digit phone number">
+
+        <label for="message">Message*</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required maxlength="100"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
     <div class="footer-container">
       <div class="footer-about">
     <h3>About</h3>
@@ -223,5 +176,13 @@
 </div>
  </div>
    </footer>
+
 </body>
 </html>
+
+
+
+
+
+
+
